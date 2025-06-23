@@ -1,0 +1,116 @@
+/* employees.css - Estilos para listado de empleados */
+.employee-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.position-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.position-architect { background-color: #cce5ff; color: #004085; }
+.position-engineer { background-color: #d4edda; color: #155724; }
+.position-technician { background-color: #fff3cd; color: #856404; }
+.position-admin { background-color: #e2e3e5; color: #383d41; }
+
+.employee-details {
+    border-left: 1px solid #eee;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .employee-details {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+}
+
+/* employee-detail.css - Estilos específicos para detalle de empleado */
+
+/* Avatar grande */
+.employee-avatar-lg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Badge de posición grande */
+.position-badge-lg {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Contenido de detalle de empleado */
+.employee-detail-content {
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .employee-detail-content {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+}
+
+/* Items de detalle */
+.detail-item {
+    margin-bottom: 20px;
+}
+
+.detail-item .label {
+    font-weight: 500;
+    color: #6c757d;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.detail-item .value {
+    font-size: 1.1rem;
+    color: #343a40;
+}
+
+/* Barra de habilidades */
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.skill-item .progress {
+    height: 8px;
+    border-radius: 4px;
+}
+
+/* Acciones rápidas */
+.btn-outline-success, 
+.btn-outline-warning {
+    margin-top: 10px;
+}
+
+/* Documentos */
+.list-group-item {
+    border: none;
+    padding: 12px 0;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}

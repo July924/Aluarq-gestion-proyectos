@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Empleado - Alu-Arq</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <header class="header-bg py-4 mb-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h4 mb-0"><i class="fas fa-user-edit me-2"></i> Editar Empleado</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card form-card">
+                    <div class="card-body">
+                        <form id="editEmployeeForm">
+                            <!-- Sección Información Personal -->
+                            <h5 class="section-title"><i class="fas fa-user me-2"></i>Información Personal</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="editFirstName" class="form-label required-field">Nombre</label>
+                                    <input type="text" class="form-control" id="editFirstName" name="firstName" value="María" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="editLastName" class="form-label required-field">Apellido</label>
+                                    <input type="text" class="form-control" id="editLastName" name="lastName" value="García" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="editDni" class="form-label required-field">DNI</label>
+                                    <input type="text" class="form-control" id="editDni" name="dni" value="30123456" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="editBirthDate" class="form-label">Fecha de Nacimiento</label>
+                                    <input type="date" class="form-control" id="editBirthDate" name="birthDate" value="1985-06-15">
+                                </div>
+                                <div class="col-12">
+                                    <label for="editAddress" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" id="editAddress" name="address" value="Av. Siempreviva 742, CABA">
+                                </div>
+                            </div>
+
+                            <!-- Sección Datos Laborales -->
+                            <h5 class="section-title"><i class="fas fa-briefcase me-2"></i>Datos Laborales</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="editPosition" class="form-label required-field">Cargo</label>
+                                    <select class="form-select" id="editPosition" name="position" required>
+                                        <option value="architect" selected>Arquitecto</option>
+                                        <option value="engineer">Ingeniero</option>
+                                        <option value="technician">Técnico</option>
+                                        <option value="admin">Administrativo</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="editDepartment" class="form-label required-field">Departamento</label>
+                                    <input type="text" class="form-control" id="editDepartment" name="department" value="Diseño Arquitectónico" required>
+                                </div>                
+                            </div>
+
+                            <!-- Sección Contacto -->
+                            <h5 class="section-title"><i class="fas fa-address-book me-2"></i>Información de Contacto</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="editEmail" class="form-label required-field">Email</label>
+                                    <input type="email" class="form-control" id="editEmail" name="email" value="maria.garcia@alu-arq.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="editPhone" class="form-label required-field">Teléfono</label>
+                                    <input type="tel" class="form-control" id="editPhone" name="phone" value="+541112345678" required>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-5">
+                                <a href="listaempleados.html" class="btn btn-outline-secondary">
+                                    <i class="fas fa-times me-2"></i>Cancelar
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save me-2"></i>Guardar Cambios
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Validación y envío del formulario
+        document.getElementById('editEmployeeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Aquí iría la lógica para enviar los datos al servidor
+            alert('Cambios guardados correctamente');
+            // window.location.href = 'employee-detail.html';
+        });
+
+        // Confirmación para eliminar empleado
+        document.getElementById('deleteEmployee').addEventListener('click', function() {
+            if(confirm('¿Estás seguro de que deseas eliminar este empleado?')) {
+                // Lógica para eliminar empleado
+                alert('Empleado eliminado');
+                // window.location.href = 'employees.html';
+            }
+        });
+    </script>
+</body>
+</html>

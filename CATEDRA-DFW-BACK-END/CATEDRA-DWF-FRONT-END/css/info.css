@@ -1,0 +1,191 @@
+/* Nuevos estilos para el encabezado del proyecto */
+        .modern-project-header {
+            padding: 2.5rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .project-title-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .project-icon {
+            background-color: #4361ee;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 6px rgba(67, 97, 238, 0.15);
+        }
+        
+        .project-title {
+            font-weight: 700;
+            font-size: 1.75rem;
+            color: #2b2d42;
+            margin-bottom: 0.25rem;
+        }
+        
+        .project-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .project-status {
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        .status-planning {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            border: 1px solid #dee2e6;
+        }
+        
+        .status-progress {
+            background-color: #e6f7ff;
+            color: #1890ff;
+            border: 1px solid #91d5ff;
+        }
+        
+        .status-paused {
+            background-color: #fff7e6;
+            color: #fa8c16;
+            border: 1px solid #ffd591;
+        }
+        
+        .status-completed {
+            background-color: #f6ffed;
+            color: #52c41a;
+            border: 1px solid #b7eb8f;
+        }
+        
+        .project-code {
+            font-size: 0.9rem;
+            color: #6c757d;
+            display: flex;
+            align-items: center;
+        }
+        
+        .project-code i {
+            margin-right: 0.5rem;
+            color: #adb5bd;
+        }
+  
+
+/*Estilos para vista detalle de proyecto */
+.project-header {
+    background-color: #28a745;
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.project-type-icon-lg {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+}
+
+.detail-item .label {
+    font-weight: 500;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.detail-item .value {
+    font-size: 1.1rem;
+}
+
+.progress-lg {
+    height: 10px;
+}
+
+.budget-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.team-member-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #495057;
+    font-weight: 600;
+}
+
+.gallery-item {
+    height: 150px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+}
+
+         /* Estilos para el modal de subida */
+        #uploadModal .modal-body {
+            padding: 20px;
+        }
+        
+        .file-info {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .document-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .document-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+          /* Estilos adicionales para la tabla de materiales */
+    #materialsTable th {
+        background-color: #f8f9fa;
+        font-weight: 600;
+    }
+    
+    .material-action-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
+
+            /* Estilos para los modales */
+        .modal-confirm .modal-header {
+            background-color: #dc3545;
+            color: white;
+        }
+        
+        .modal-confirm .modal-footer {
+            justify-content: center;
+        }

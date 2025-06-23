@@ -1,0 +1,28 @@
+.hidden { display: none; }
+.status-badge {
+padding: 3px 8px;
+border-radius: 12px;
+font-size: 12px;
+font-weight: 500;
+}
+.status-planning { background-color: #fff3cd; color: #856404; }
+.status-progress { background-color: #d4edda; color: #155724; }
+.status-paused { background-color: #f8d7da; color: #721c24; }
+.status-completed { background-color: #e2e3e5; color: #383d41; }
+.project-type-icon {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}
+.project-type-icon.Residencial { background-color: #4e73df; }
+.project-type-icon.Comercial { background-color: #1cc88a; }
+.project-type-icon.Industrial { background-color: #36b9cc; }
+.project-type-icon.Institucional { background-color: #f6c23e; }
+.header-bg { background-color: #2c3e50; color: white; }
+.no-results { text-align: center; padding: 40px 0; color: #6c757d; }
+.budget-item { display: flex; justify-content: space-between; }
+.budget-label { font-weight: 500; }
